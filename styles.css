@@ -34,7 +34,6 @@ a:hover {
   background: white;
   min-height: 30px;
   padding: 10px;
-  /* position: fixed; */
   text-align: center;
 }
 .nav {
@@ -72,13 +71,16 @@ header {
 }
 
 .hero {
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* vertical-align: middle; */
 }
 
-.tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.headline {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 
   /* color: black; */
   font-size: 4rem;
@@ -87,7 +89,6 @@ header {
   display: table;
   /* margin: 10px auto; */
 } 
-
 
 
 .h1Color {
@@ -99,18 +100,12 @@ header {
 
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
-}
-
 
 .hero-icons {
-  display: inline-flex;
+  display: block;
   margin-top: 2rem;
   row-gap: 40px;
+  font-size: 1.7rem;
 }
 
 #hero-icons-project {
@@ -120,7 +115,6 @@ header {
 
 .fa-hero {
   margin-right: 30px;
-  size: 5rem;
   background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
   background-clip: unset;
   -webkit-background-clip: text;
@@ -134,13 +128,13 @@ header {
 
 
 .cta-header {
-  margin-top: 10%;
-  font-size: 2rem;
+  margin-top: 5%;
+  font-size: 1.5rem;
   background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
   background-clip: unset;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   -o-border-image: linear-gradient(135deg, #0797b4 0%, #1b3979 100%);
   border-image: linear-gradient(
@@ -228,7 +222,7 @@ header {
 }
 
 #img-project {
-  max-width: 600px; 
+  max-width: 100%; 
   border-radius: 3%;
   box-shadow: 1px 0.5px 20px rgba(0, 0, 0, 0.678);
 }
@@ -304,7 +298,7 @@ a.social:hover {
 @media screen and (min-width: 720px) {
   
   .flexcard1 {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -ms-flexbox;     /* TWEENER - IE 10 */
       display: flex; 
       -ms-flex-pack: distribute;
       justify-content: center;
@@ -349,3 +343,84 @@ a.social:hover {
   }
 }
 
+/* Styles for smaller screens */
+
+@media only screen and (max-width: 700px) {
+
+  .header {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    background-color: white;
+    /* overflow: hidden; */
+    height: 100vh;
+    /* padding-left: 1rem; */
+    padding: 0 10px 0 10px;
+  
+  }
+
+  .hero {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    /* vertical-align: middle; */
+  }
+
+  .headline {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  
+    /* color: black; */
+    font-size: 1.7rem;
+    text-align: left;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    /* padding: 10px; */
+    /* display: table; */
+    /* margin: 10px auto; */
+  } 
+  
+  
+  .h1Color {
+    background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  
+  }
+  
+  
+  .hero-icons {
+    display:inline;
+    margin-top: 2rem;
+    max-width: 100%;
+    /* align-items: left; */
+    row-gap: 10px;
+    padding: 0 10px 0 10px;
+    
+  }
+  
+  #hero-icons-project {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .fa-hero {
+    /* margin-right: 30px; */
+    /* size: 2rem; */
+    margin-right: 10px;
+    font-size: 1.7rem;
+    background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cta-header {
+    margin-left: 10px;
+  }
+
+}
