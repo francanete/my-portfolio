@@ -128,7 +128,7 @@ header {
 
 
 .cta-header {
-  margin-top: 5%;
+  /* margin-top: 5%;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
   background-clip: unset;
@@ -137,10 +137,18 @@ header {
   border-width: 1px;
   border-style: solid;
   -o-border-image: linear-gradient(135deg, #0797b4 0%, #1b3979 100%);
-  border-image: linear-gradient(
-135deg
-, #0797b4 0%, #1b3979 100%);
-  border-image-slice: 1;
+  border-image: linear-gradient(135deg, #0797b4 0%, #1b3979 100%);
+  border-image-slice: 10;
+  cursor: pointer; */
+
+  margin-top: 5%;
+  font-size: 1.5rem;
+  background: none;
+  color: #1b3979;
+  /* border-color: #29e918; */
+
+  border: 2px solid #1b3979;
+
   cursor: pointer;
 }
 
