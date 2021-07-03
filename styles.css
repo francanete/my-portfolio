@@ -103,7 +103,7 @@ header {
 
 .hero-icons {
   display: block;
-  margin-top: 2rem;
+  /* margin-top: 0; */
   row-gap: 40px;
   font-size: 1.7rem;
 }
@@ -143,6 +143,7 @@ header {
 
   margin-top: 5%;
   font-size: 1.5rem;
+  padding: 2px 5px;
   background: none;
   color: #1b3979;
   border: 2px solid #1b3979;
