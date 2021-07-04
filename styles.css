@@ -29,52 +29,31 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
-  width: 100%;
-  background: white;
-  min-height: 30px;
-  padding: 10px;
-  text-align: center;
-}
-.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-}
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: black
-}
 
 header {
   display: flex;
   align-items: center;
   background-color: white;
-  /* overflow: hidden; */
   height: 100vh;
   padding-left: 6rem;
+  align-items: center;
+
+  
+
+
+  
+  /* justify-content: left; */
 
 }
 
-.hero {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  
   /* vertical-align: middle; */
+  
 }
 
 .headline {
@@ -86,7 +65,7 @@ header {
   font-size: 4rem;
   text-align: left;
   /* padding: 10px; */
-  display: table;
+  /* display: table; */
   /* margin: 10px auto; */
 } 
 
@@ -108,10 +87,7 @@ header {
   font-size: 1.7rem;
 }
 
-#hero-icons-project {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+
 
 .fa-hero {
   margin-right: 30px;
@@ -127,61 +103,19 @@ header {
 
 
 
-.cta-header {
-  /* margin-top: 5%;
-  font-size: 1.5rem;
-  background: -webkit-linear-gradient(rgb(41, 129, 187), #272341);
-  background-clip: unset;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  -o-border-image: linear-gradient(135deg, #0797b4 0%, #1b3979 100%);
-  border-image: linear-gradient(135deg, #0797b4 0%, #1b3979 100%);
-  border-image-slice: 10;
-  cursor: pointer; */
-
+.cta-button {
   margin-top: 5%;
   font-size: 1.5rem;
   padding: 2px 5px;
   background: none;
   color: #1b3979;
-  border: 2px solid #1b3979;
+  border: 1.5px solid #1b3979;
   cursor: pointer;
-}
-
-#secondary-button {
-  font-size: 1.5rem;
-}
-
-/* #secondary-button:hover {
-  transform: scale(1.1);
-  transition: all 1s;
-} */
-
-#second-bttn-icon {
-  margin-left: 30px;
-  position: relative;
-  top: 4px;
 }
 
 .cta-resume {
-  margin-top: 10%;
-  font-size: 1.5rem;
-  background-image: linear-gradient(
-135deg
-, #c5e3e9 0%, #d0dbf3 100%);
-  background-clip: unset;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  -o-border-image: linear-gradient(135deg, #c5e3e9 0%, #d1defa 100%);
-  border-image: linear-gradient(
-135deg
-, #c5e3e9 0%, #acc6ff 100%);
-  border-image-slice: 1;
-  cursor: pointer;
+  color: #e0e0e0;
+  border: 1.5px solid #e0e0e0;
 }
 
 .location {
@@ -189,7 +123,17 @@ header {
   color: yellow;
 }
 
+/* About section */
+
 .about {
+  padding-top: 2rem;
+  background: -webkit-linear-gradient(#2981bb, #272341);
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.about-title {
   margin: 0 0 4.5rem;
   font-size: 3rem;
   text-transform: uppercase;
@@ -198,20 +142,31 @@ header {
   margin: 60px auto;
 }
 
+.flex-container {
+  display: flex; 
+  -ms-flex-pack: distribute;
+  justify-content: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+
 #about-text {
   color: white;
 }
 
-.flex1 {
-  padding-top: 2rem;
-  background: -webkit-linear-gradient(#2981bb, #272341);
-  width: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+#img-about {
+  width: 300px; 
+  border-radius: 3%;
+  box-shadow: 1px 0.5px 20px #000000ad;
 }
 
+
+/* Projects */
+
 .projects {
-  padding-top: 4rem;
+  padding-top: 10rem;
 }
 
 .project-title {
@@ -221,11 +176,11 @@ header {
   
 }
 
-#imageprofile {
-  width: 300px; 
-  border-radius: 3%;
-  box-shadow: 1px 0.5px 20px #000000ad;
+.icons-project {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
 
 #img-project {
   max-width: 100%; 
@@ -233,16 +188,11 @@ header {
   box-shadow: 1px 0.5px 20px rgba(0, 0, 0, 0.678);
 }
 
-.flex2 {
-  color: none;
-}
-
-
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  /* max-width: 500px; */
+  max-width: 1200px;
   text-align: left;
   vertical-align: center;
   color: rgb(43, 43, 43);
@@ -250,13 +200,30 @@ header {
   transition: all .5s;
 }
 
+#second-bttn-icon {
+  font-size: 2rem;
+  margin-left: 30px;
+  position: relative;
+  top: 4px;
+}
+
+
+/* FOOTER */
 
 footer {
   width: 100%;
-  min-height: 15rem;
+  min-height: 25rem;
   padding-top: 300px;
-  /* padding: 20px 0 40px 20px; */
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+}
+
+footer {
+  font-size: 1.3em;
+  color: white;
+  max-width: 100%;
+  margin: 5rem 0 0;
+  padding-top: 10rem;
+  background: -webkit-linear-gradient(#2981bb, #272341);
 }
 
 footer .copyright {
@@ -300,26 +267,18 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-  
-  .flexcard1 {
-      display: -ms-flexbox;     /* TWEENER - IE 10 */
-      display: flex; 
-      -ms-flex-pack: distribute;
-      justify-content: center;
-      margin: 0 auto;
-      height: auto;
-  }
 
-  .projects {
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: flex; 
-    max-width: 1200px;
-    -ms-flex-pack: distribute;
-    justify-content: center;
-    margin: 0 auto;
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 1200px) {
+
+  justify-content: center;
 }
+
+
+/* @media screen and (min-width: 720px) {
+
 
   header {
     min-height: 470px;
@@ -339,15 +298,7 @@ a.social:hover {
     line-height: 1.6em;
   }
 
-  footer {
-    font-size: 1.3em;
-    color: white;
-    max-width: 100%;
-    margin: 5rem 0 0;
-    padding-top: 10rem;
-    background: -webkit-linear-gradient(#2981bb, #272341);
-  }
-}
+} */
 
 /* Styles for smaller screens */
 
@@ -425,10 +376,14 @@ a.social:hover {
     -webkit-text-fill-color: transparent;
   }
 
-  .cta-header {
+  .cta-button {
     margin-left: 10px;
     margin-top: 1.5rem;
     font-size: 1rem;
   }
+
+.flex-container {
+  flex-wrap: wrap-reverse;
+}
 
 }

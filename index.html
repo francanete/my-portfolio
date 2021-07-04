@@ -18,7 +18,9 @@
     </div> -->
 
     <header class="header">
-      <section class="hero">
+
+      <!-- Header section -->
+      <div class="hero-container">
         <h1 class="headline">Hi, my name is <span class="h1Color">Fran Canete</span><br/> I'm a Frontend Developer</h1>
         <div class="hero-icons">
           <i class="fab fa-html5 fa-hero"></i>
@@ -29,49 +31,62 @@
           <i class="fab fa-npm fa-hero"></i>
           <i class="fab fa-wordpress fa-hero"></i>
         </div>
-        <button class="cta-header">Know more</button>
-        
-      </section>
+        <button class="cta-button">Know more</button>
+      </div>
     </header>
+
+
     <main class="main">
-      <section class="flex1">
-      <h2 class="about">About me</h2>
-      <section class="flexcard1">
-        <div class="card">
-          <image src="./images/francanete.jpg" alt="fran canete" id="imageprofile"></image>
-        </div> 
 
-        <div class="card" id="about-text">
-          <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
-          <br>
-          <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-          <button class="cta-resume">Resume</button>
+
+
+      <!-- About section -->
+
+      <div class="about">
+        <h2 class="about-title">About me</h2>
+
+        <div class="flex-container">
+          <section class="card">
+            <image src="./images/francanete.jpg" alt="fran canete" id="img-about"></image>
+          </section> 
+
+          <section class="card" id="about-text">
+            <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+            <br>
+            <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+            <button class="cta-button cta-resume">Resume</button>
+          </section>
         </div>
-      </section>
-      </section>
+      </div>
 
-      <section class="projects">
+
+      <!-- Projects -->
+      <div class="flex-container projects">
         <div class="card">
           <h2 class="project-title">The Amazing Project #1</h2>
           <br>
-          <div class="hero-icons" id="hero-icons-project">
-            <i class="fab fa-html5 fa-2x fa-hero"></i>
-            <i class="fab fa-css3-alt fa-2x fa-hero"></i>
-            <i class="fab fa-js-square fa-2x fa-hero"></i>
-            <i class="fab fa-react fa-2x fa-hero"></i>
+          <div class="hero-icons icons-project" >
+            <i class="fab fa-html5 fa-hero"></i>
+            <i class="fab fa-css3-alt fa-hero"></i>
+            <i class="fab fa-js-square fa-hero"></i>
+            <i class="fab fa-react fa-hero"></i>
           </div>
           <p>I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
           <br>
           <p>I’ve been a professional cook and gardener and am a life-long learner who's always interested in expanding my skills.</p>
-          <button class="cta-header" id="secondary-button">See Live</button>
-          <i class="fab fa-github fa-2x fa-hero" id="second-bttn-icon"></i>
+          <button class="cta-button">See Live</button>
+          <i class="fab fa-github fa-hero" id="second-bttn-icon"></i>
         </div> 
+
         <div class="card">
           <img src="./images/project.jpeg" alt="projects" id="img-project">
         </div> 
-    </section>
+      </div>
+
 
     </main>
+
+    <!-- Footer: contact section -->
     <footer>
       <h2>Contact me</h2>
       <ul>
