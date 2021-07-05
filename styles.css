@@ -77,8 +77,6 @@ header {
 
 .hero-icons {
   display: block;
-  /* margin-top: 0; */
-  row-gap: 40px;
   font-size: 1.7rem;
 }
 
@@ -326,7 +324,6 @@ a.social:hover {
     margin-top: 0;
     max-width: 100%;
     /* align-items: left; */
-    row-gap: 10px;
     padding: 0 10px 0 10px;
     
   }
